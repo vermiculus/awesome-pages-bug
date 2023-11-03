@@ -1,0 +1,10 @@
+# -*- yaml -*-
+nav:
+  - Page A: page-a.md
+  - Section A:
+    - Section B:
+      - Page B: page-b.md
+      - Page C: page-c.md
+  - Section C:
+    - Section D: my-dir
+  - ...

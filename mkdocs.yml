@@ -1,0 +1,65 @@
+site_name: Test Site
+extra:
+  generator: false
+  version:
+    provider: mike
+theme:
+  name: material
+  icon:
+    repo: material/git
+  features:
+    - toc.integrate
+    - navigation.instant
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.tracking
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - content.action.edit
+    - content.code.copy
+    - content.code.annotate
+
+plugins:
+  - search
+  - awesome-pages
+  - exclude:
+      glob:
+        - "*.inc.md"
+  - mike:
+      deploy_prefix: public
+      alias_type: symlink
+
+markdown_extensions:
+  - toc:
+      permalink: "#"
+      permalink_title: "Link to this section"
+  - abbr
+  - attr_list
+  - admonition
+  - def_list
+  - footnotes
+  - smarty
+  - pymdownx.details
+  - pymdownx.highlight:
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets:
+      dedent_subsections: true
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+
+strict: true
+
+validation:
+  omitted_files: warn
+  absolute_links: warn
+  unrecognized_links: warn

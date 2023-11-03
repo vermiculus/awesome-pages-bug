@@ -1,0 +1,6 @@
+# -*- yaml -*-
+nav:
+  - Quick Start: README.md
+  - Guide: guide
+  - Help: help
+  - ...

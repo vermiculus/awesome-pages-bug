@@ -1,0 +1,6 @@
+# -*- yaml -*-
+nav:
+  - Troubleshooting: index.md
+  - Other Topics:
+    - logging.md
+  - ...

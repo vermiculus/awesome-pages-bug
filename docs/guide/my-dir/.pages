@@ -1,0 +1,5 @@
+# -*- yaml -*-
+nav:
+  - Landing: index.md
+  - Page E: page-e.md
+  - Page F: page-f.md
